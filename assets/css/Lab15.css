@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+
+.login-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.login-form a{
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.text-font{
+    font-weight: bold;
+    font-variant: small-caps;
+    margin: 10px;
+}
+
+.input{
+    width: 200px;   
+}
+
+.margin-form{
+    margin: 10px;
+}
+
+#sidebar {
+    height: 400px;
+    position: relative;
+    width: 25%;
+    left: 75%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#article{
+    position: absolute;
+    width: 75%;
+    display: block;
+}
+
+.nav{
+    background-color: orangered;
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#footer{
+    text-align: center;
+    background-color:lightcyan;
+    font-variant: small-caps;
+    padding: 5px 0;
+}
+
+.nav > li{
+    display: inline-block;    
+    position: relative;
+}
+
+.nav li a{
+    display: block;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 15px 10px;
+}
+
+.nav .subnav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 10;
+}
+
+.subnav li a{
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    background-color: white;
+    color: orangered;
+    padding: 10px 100px 10px 10px;
+    border: 1px ridge #80808069;
+    border-radius: 5px
+}
+
+.nav li:has(.subnav) {
+    &::after {
+        content: "";
+        display: block;
+    }
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.subnav a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+#sidebar .bar{
+    margin: 0;
+    padding-top: 20px;
+}
+
+iframe[name=page]{
+    width: 100%;
+    min-height: 400px;
+}
+
+.menu{
+    padding: 0%;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px grey;
+}
+
+.menu a{
+    line-height: 100%;
+    background: url('bullet_hover.gif') no-repeat 10px center;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;          
+}
+
+.menu a:hover{
+    background: url('bullet.png') no-repeat 10px center;
+    border-bottom: 1 pixel dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold
+}
+
+/* .text-font{
+    font-variant: small-caps;
+    font-weight: bolder;
+    margin: 10px 0;
+} */
+
+/* .background-color{
+    border: 1px solid red;
+    background-color: yellow;
+    border-radius: 3px;
+} */
+
+button {
+    padding: 8px 20px;
+    color: orangered;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px blue;
+}
+
+button:disabled{
+    color: darkgray;
+    box-shadow: inset 0 0 10px gray;
+}
+
+.sizetxt{
+    width: 500px;
+}
+
